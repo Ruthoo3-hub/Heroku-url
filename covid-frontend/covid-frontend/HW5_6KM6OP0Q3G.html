@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/covid.css">
+</head>
+<body>
+    <div class="header">
+        <div>
+            <p id="logo">p</p>
+        </div>
+        <div class="text">
+            <p>PaSe Covid-19</p>
+        </div>
+    </div>
+
+    <div class="dashboard">
+        <div class="cases" background="red">
+            <p>Confirmed Cases <i class="fa fa-caret-up fa-lg"></i></p>
+            <span id='total-cases'></span>
+        </div>
+        <div class="cases">
+            <p>Recovered <i class="fa fa-caret-down fa-lg"></i></p>
+            <span id="total-recovered"></span>
+        </div>
+        <div class="cases">
+            <p>Active Cases <i class="fa fa-caret-up fa-lg"></i></p>
+            <span id="total-active"></span>
+        </div>
+        <div class="cases">
+            <p>Death <i class="fa fa-caret-up fa-lg"></i></p>
+            <span id="total-deaths"></span>
+        </div>
+    </div>
+
+    <div class="data">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Country_Region</th>
+                    <th>Active</th>
+                    <th>Recovered</th>
+                    <th>Death</th>
+                    <th>Confirmed</th>       
+                </tr>
+            </thead>
+            <tbody id="tbd">
+                <div id="loading"></div>
+            </tbody>    
+        </table>
+
+        <div>
+            <div class="tips">
+                <p>Emergencies</p>
+                <img src="image/covid-19.jpg" alt="health tips on Covid-19" width="195" height="100px">
+            </div>
+            <div class="tips">
+                <p>News &amp; Updates</p>
+                <img src="image/updates.jpg" alt="updates on Covid-19" width="195" height="100px">
+            </div>
+            <div id="sticky">
+                <p>LEARN MORE HERE</p>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
